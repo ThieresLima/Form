@@ -42,7 +42,6 @@ function Form() {
                         </Icon>
                     </Login>
 
-
                     <LoginContainer>
                         <Text>Login</Text>
                     </LoginContainer>

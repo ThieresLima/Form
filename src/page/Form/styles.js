@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
     display: flex;
     background: linear-gradient( to right, rgba(39, 100, 154), rgb(137, 26, 26));
-    max-width: 100vw;
-    height: 750px;
+    max-width: 100vw; 
+    height: 800px;
     justify-content: center;
 `;
 
@@ -16,18 +16,33 @@ export const Main = styled.div`
     height: 650px;
     margin-top: 20px;
     border-radius: 5px;
+
+    @media (max-width: 760px) {
+        width: 400px;
+        height: 500px;
+    }
 `;
 
 export const Image = styled.img`
     width: 500px;
     height: 650px;
     border-radius: 5px;
+    @media (max-width: 760px) {
+        display: none;
+    }
 `;
 
 export const ContainerLogin = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 470px;
     height: 420px;
     text-align: center;
+    @media (max-width: 760px) {
+        width: 100%;
+    }
 `;
 
 export const Login = styled.div`
@@ -37,6 +52,9 @@ export const Login = styled.div`
     position: relative;
     margin: 0 auto;
     padding: 5px;
+    @media (max-width: 760px) {
+        width: 100%;   
+    }
 `;
 
 export const LoginText = styled.h1`
@@ -45,6 +63,10 @@ export const LoginText = styled.h1`
     text-align: center;
     color: #333333;
     font-size: 28px;
+
+    @media (max-width: 760px) {
+        padding-bottom: 20px;
+    }
 `;
 
 export const LoginInput = styled.input`
@@ -58,6 +80,10 @@ export const LoginInput = styled.input`
     border: 0 none;
     outline: 0;
     background-color: #E6E6E6;
+
+    @media (max-width: 760px) {
+        width: 100%;   
+    }
 `;
 
 export const Icon = styled.span`
@@ -70,7 +96,6 @@ export const LoginContainer = styled.div`
     margin-top: 30px;
     width: 300px;
     padding: 18px;
-    margin-left: 87px;
     background: linear-gradient( to right, rgba(39, 100, 154), rgb(137, 26, 26));
     border-radius: 30px;
 `;
@@ -89,13 +114,15 @@ export const TextSpan = styled.p`
     font-size: 14px;
     font-weight: bold;
     padding: 14px;
+    width: 450px;
 `;
 
 export const CreateAccContainer = styled.div`
     display: flex;
+    width: 460px;
     align-items: center;
     justify-content: flex-end;
-    padding: 20px;
+    padding: 30px;
     margin-top: 80px;
 `;
 
